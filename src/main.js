@@ -1,3 +1,5 @@
+import EarthlingData from './earthlingdatacruncher.js';
+
 $(document).ready(function() {
   $('#galactic-age-calculator').submit(function(event) {
     event.preventDefault();
