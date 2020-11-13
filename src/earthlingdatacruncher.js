@@ -1,5 +1,5 @@
-function EarthlingData(earthage, residence, gender) {
-  this.earthage = earthage;
+function EarthlingData(earthAge, residence, gender) {
+  this.earthAge = earthAge;
   this.residence = residence;
   this.gender = gender;
 }
