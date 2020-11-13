@@ -71,6 +71,33 @@ _{Q's to ask in setup: Do person using an app need to run a server? How should t
 | **Program Sums Character Values**| Input: "4 1 6 2" | Page Displays: 13 |
 
 ### Tests
+Describe: EarthAge()
+Expect: EarthAge(30).toEqual(30)
+
+Describe: MercuryAge() 
+Test: MercuryAge(0.24 * EarthAge)
+Expect: MercuryAge(30).toEqual(7.2)
+
+Describe: VenusAge()
+Test: VenusAge(0.62 * EarthAge)
+Expect: VenusAge(30).toEqual(18.6)
+
+Describe: MarsAge()
+Test: MarsAge(1.88 * EarthAge)
+Expect: MarsAge(30).toEqual(56.4)
+
+Describe: JupiterAge()
+Test: JupiterAge(11.86 * EarthAge)
+Expect: JupiterAge(30).toEqual(355.8)
+
+Describe: EarthLifeExpectancy()
+Test: death rate method = TODO
+Expect: EarthLifeExpectancy(xAge).toEqual(calculatedLengthofEarthLife)
+
+Describe: MercuryAgeExpectancy()
+Test: (EarthLifeExpectancy(xAge) * 0.24)
+Expect: MercuryAgeExpectancy().toEqual()
+
 
 ## (Optional) Known bugs
 
