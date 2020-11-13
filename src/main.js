@@ -1,3 +1,5 @@
+import './css';
+
 import EarthlingData from './earthlingdatacruncher.js';
 
 $(document).ready(function() {
