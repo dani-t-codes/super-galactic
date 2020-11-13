@@ -6,4 +6,4 @@ export default function EarthlingData(earthAge, residence, gender) {
 
 EarthlingData.prototype.crunchNumbers = function () {
   return "Earthling numbers will eventually do things.";
-}
+};
