@@ -1,4 +1,4 @@
-import './css';
+import './css/styles.css';
 
 import EarthlingData from './earthlingdatacruncher.js';
 
