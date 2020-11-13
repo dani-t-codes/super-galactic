@@ -1,3 +1,9 @@
 body {
-  background-color: lightgreen; 
+  background-image: url("/assets/images/solar-system-439046_1920.jpg");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-color: #2E3C8C;
+  background-position: center;
+  color: #CEF2F2;
+  letter-spacing: 2px;
 }
