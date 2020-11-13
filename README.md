@@ -13,6 +13,13 @@ While a solar year lasts 365 on planet Earth, no planet in our solar system shar
 * _jQuery_
 * _webpack_
 
+## Color theme
+* _#2E3C8C (Med-dark blue)_
+* _#CEF2F2 (Light blue)_
+* _#F2600C (Orange)_
+* _#590202 (Burnt red)_
+* _#0D0D0D (Black)_
+
 ## Installation requirements
 * _For Mac users, find Terminal in your Finder, and open a new window. Install the package manager, (Homebrew) [https://brew.sh/], on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`._
 * _Once homebrew is installed, install Git, a version control system for code writers, with this line of code `brew install git`._
