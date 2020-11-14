@@ -93,19 +93,20 @@ Expect: EarthLifeExpectancy(xAge).toEqual(calculatedLengthofEarthLife)
 Describe: MercuryLifeExpectancy()
 Test: if MercuryAge > 2 minutes, then dead. 
 Test: MercuryAge - 0
-Expect: MercuryAgeExpectancy(MercuryAge = 7.2).toEqual(#ofYearsSurpassingMercuryLifeExpectancy = 7.2y - 2m)
+Expect: MercuryLifeExpectancy(MercuryAge = 7.2).toEqual(7.2y - 2m)
 
 Describe: VenusLifeExpectancy()
 Test: if VenusAge > 1 second, then dead. 
 Test: VenusAge - 0
-Expect: MercuryAgeExpectancy(VenusAge = 18.6).toEqual(#ofYearsSurpassingVenusLifeExpectancy = 18.6y - 1s)
+Expect: MercuryLifeExpectancy(VenusAge = 18.6).toEqual(18.6y - 1s)
 
 Describe: MarsLifeExpectancy()
 Test: if MarsAge > 2 minutes, then dead. 
-Expect: MarsAgeExpectancy(MarsAge = 56.4).toEqual(#ofYearsSurpassingMarsLifeExpectancy = 56.4y - 2m)
+Expect: MarsLifeExpectancy(MarsAge = 56.4).toEqual(56.4y - 2m)
 
 Describe: JupiterLifeExpectancy()
 Test: if JupiterAge > 0 seconds, then dead. 
+Expect: JupiterLifeExpectancy(JupiterAge = 355.8).toEqual(355.8)
 
 
 ## (Optional) Known bugs
