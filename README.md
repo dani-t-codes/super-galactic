@@ -5,9 +5,9 @@
 #### By Danielle Thompson
 
 ## Description
-While a solar year lasts 365 on planet Earth, no planet in our solar system shares the same solar year length. This application determines both a user's age and life expectancy for Earth, Mercury, Venus, Mars, and Jupiter. 
+While a solar year lasts 365 on planet Earth, no planet in our solar system shares the same solar year length. This application determines both a user's age and life expectancy for the planets Earth, Mercury, Venus, Mars, and Jupiter. 
 
-Life expectancy is calculated based on death probabilities according to Farr's death rate method: qx = Mx / (Bx + (Mx/2)) where Mx = number of deaths at age of x to under x+1 years in the reported period; Bx = average population aged x to under x+1 in the base period; qx = death probability from age x to x+1. Relevant demographic data includes: 
+Earth life expectancy is calculated based on death probabilities according to Farr's death rate method: qx = Mx / (Bx + (Mx/2)) where Mx = number of deaths at age of x to under x+1 years in the reported period; Bx = average population aged x to under x+1 in the base period; qx = death probability from age x to x+1. Relevant demographic data includes: 
 * Current age
 * Calendar year
 * Country
@@ -16,7 +16,9 @@ Life expectancy is calculated based on death probabilities according to Farr's d
 * Age group
 * Socio-economic status
 
-Additional factors to consider for calculating death rates could include weight, height, education level, marital status, retirement status, annual income, frequency of exercise, general health, smoker/non-smoker status, alcoholic beverages per week 
+(Additional factors to consider for calculating death rates could include weight, height, education level, marital status, retirement status, annual income, frequency of exercise, general health, smoker/non-smoker status, alcoholic beverages per week. However, these and other potential factors will not be considered for the purposes of this application.)
+
+Planetary life expectancy outside of earth was based on data that suggests that if an interplanetary traveler visited Mercury, Venus, or Jupiter, with or without a spacesuit, they would die quickly, in some cases even before touching down on some planet's surfaces. A person would be dead in two minutes or less upon arrival to Mercury as the extreme heat or extreme cold, depending on which side of the planet you were on in relation to the sun, would be too much for the human body to handle. Venus's extreme temperates of at least 470 degrees Celsius would consume a human body in less than a second. Jupiter does not even have a surface, as the planet is composed largely of hydrogen & helium gases, so a person would die before ever even touching the "surface". While Mars has long been considered for potential human residence, without a spacesuit, a human would still die within two minutes because there is no air we can breathe, and the silicone dust on the planet would quickly suffocate us. In all cases, the user will see how many x planet years your are past x planet's life expectancy (of zero). 
 
 ## Technologies used
 * _Javascript_
@@ -32,7 +34,7 @@ Additional factors to consider for calculating death rates could include weight,
 * _#590202 (Burnt red)_
 * _#0D0D0D (Black)_
 
-## Installation requirements
+## Setup instructions
 ###### For Mac Users
 * _Access Terminal in your Finder, and open a new window. Install the package manager, (Homebrew) [https://brew.sh/], on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`._
 * _Ensure Homebrew packages are run with this line of code: `echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile`._
@@ -50,15 +52,6 @@ Additional factors to consider for calculating death rates could include weight,
 
 ###### For Both Mac & Windows systems
 * _Once the project has been cloned to your computer, open index.html in your web browser of choice, either by double-clicking the file icon inside the project folder, or by opening File>Open File>"index.html" from the super-galactic folder that you cloned onto your computer._
-
-### Setup Instructions
-* TODO
-* _List setup instructions_
-* _Clearly & simply here_
-* _So that anyone who uses your app_
-* _Will be able to reproduce the app fxns, etc._
-
-_{Q's to ask in setup: Do person using an app need to run a server? How should they set up my databases? Is there other code this app depends on? Etc.}_
 
 ### Specs
 | Spec | Input | Output |
@@ -91,12 +84,28 @@ Test: JupiterAge(11.86 * EarthAge)
 Expect: JupiterAge(30).toEqual(355.8)
 
 Describe: EarthLifeExpectancy()
-Test: death rate method = TODO
+Test 1A: TODO death rate
+Expect: EarthAge(30).toEqual.EarthLifeExpectancy(85)
+
+Test 1B: subtract(EarthLifeExpectancy - xAge)
 Expect: EarthLifeExpectancy(xAge).toEqual(calculatedLengthofEarthLife)
 
-Describe: MercuryAgeExpectancy()
-Test: (EarthLifeExpectancy(xAge) * 0.24)
-Expect: MercuryAgeExpectancy().toEqual()
+Describe: MercuryLifeExpectancy()
+Test: if MercuryAge > 2 minutes, then dead. 
+Test: MercuryAge - 0
+Expect: MercuryAgeExpectancy(MercuryAge = 7.2).toEqual(#ofYearsSurpassingMercuryLifeExpectancy = 7.2y - 2m)
+
+Describe: VenusLifeExpectancy()
+Test: if VenusAge > 1 second, then dead. 
+Test: VenusAge - 0
+Expect: MercuryAgeExpectancy(VenusAge = 18.6).toEqual(#ofYearsSurpassingVenusLifeExpectancy = 18.6y - 1s)
+
+Describe: MarsLifeExpectancy()
+Test: if MarsAge > 2 minutes, then dead. 
+Expect: MarsAgeExpectancy(MarsAge = 56.4).toEqual(#ofYearsSurpassingMarsLifeExpectancy = 56.4y - 2m)
+
+Describe: JupiterLifeExpectancy()
+Test: if JupiterAge > 0 seconds, then dead. 
 
 
 ## (Optional) Known bugs
