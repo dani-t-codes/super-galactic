@@ -18,14 +18,18 @@ Earth life expectancy is calculated based on death probabilities according to Fa
 
 (Additional factors to consider for calculating death rates could include weight, height, education level, marital status, retirement status, annual income, frequency of exercise, general health, smoker/non-smoker status, alcoholic beverages per week. However, these and other potential factors will not be considered for the purposes of this application.)
 
-Planetary life expectancy outside of earth was based on data that suggests that if an interplanetary traveler visited Mercury, Venus, or Jupiter, with or without a spacesuit, they would die quickly, in some cases even before touching down on some planet's surfaces. A person would be dead in two minutes or less upon arrival to Mercury as the extreme heat or extreme cold, depending on which side of the planet you were on in relation to the sun, would be too much for the human body to handle. Venus's extreme temperates of at least 470 degrees Celsius would consume a human body in less than a second. Jupiter does not even have a surface, as the planet is composed largely of hydrogen & helium gases, so a person would die before ever even touching the "surface". While Mars has long been considered for potential human residence, without a spacesuit, a human would still die within two minutes because there is no air we can breathe, and the silicone dust on the planet would quickly suffocate us. In all cases, the user will see how many x planet years your are past x planet's life expectancy (of zero). 
+Planetary life expectancy outside of earth was based on data that suggests that if an interplanetary traveler visited Mercury, Venus, or Jupiter, with or without a spacesuit, they would die quickly, in some cases even before touching down on some planet's surfaces. A person would be dead in two minutes or less upon arrival to Mercury as the extreme heat or extreme cold, depending on which side of the planet you were on in relation to the sun, would be too much for the human body to handle. Venus's extreme temperates of at least 470 degrees Celsius would consume a human body in less than a second. Jupiter does not even have a surface, as the planet is composed largely of hydrogen & helium gases, so a person would die before ever even touching the "surface". While Mars has long been considered for potential human residence, without a spacesuit, a human would still die within two minutes because there is no air we can breathe, and the silicone dust on the planet would quickly suffocate us. In all cases, the user will see how many x planet years your are past x planet's life expectancy (of zero). (For reference, please visit (Seeker)[https://www.seeker.com/videos/space-innovation/how-long-could-you-survive-on-other-planets]).
 
 ## Technologies used
-* _Javascript_
+* _ES6 Javascript_
 * _Bootstrap_
 * _jQuery_
 * _node.js_ 
+* _npm_
 * _webpack_
+* _ES Lint_
+* _Jest_
+* _Babel_
 
 ## Color theme
 * _#2E3C8C (Med-dark blue)_
@@ -51,17 +55,23 @@ Planetary life expectancy outside of earth was based on data that suggests that 
 * _Go to the (Node.js website)[https://nodejs.org/en/download/] and download the appropriate source code for your Windows operating system._ 
 
 ###### For Both Mac & Windows systems
-* _Once the project has been cloned to your computer, open index.html in your web browser of choice, either by double-clicking the file icon inside the project folder, or by opening File>Open File>"index.html" from the super-galactic folder that you cloned onto your computer._
+* _Once the project has been cloned to your computer, run `npm run start` to open a live session of the application from your preferred code editor. (Visual Code Studio)[https://code.visualstudio.com/] was used and is recommended by the application builder._
 
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Homepage** | User accesses localhost:5500 | Homepage with user input form |
-| **Program Gathers User Input** | User input: "hopes" | Output: "dreams" |
-| **Program Removes Spaces from User Input**| User Input: "hope hope" | Output: "hopehope" |
-| **Program Removes Punctuation from User Input**| Input: "h*o@pe  /h#o**p'e" | Output: "hopehope" |
-| **Program Assigns Characters Numeric Values** | Input: "hope" | Output: "4 1 6 2" |
-| **Program Sums Character Values**| Input: "4 1 6 2" | Page Displays: 13 |
+| **Homepage** | User accesses localhost:8080 | Homepage with user input form |
+| **Program Gathers User Data** | User input: "age + demographic data" | Output: "planetary ages & life expectancies" |
+| **Program Determines Mercury Age**| User Input: "Earth age * 0.24" | Output: "Mercury age" |
+| **Program Determines Venus Age**| User Input: "Earth age * 0.24" | Output: "Venus age" |
+| **Program Determines Mars Age**| User Input: "Earth age * 0.24" | Output: "Mars age" |
+| **Program Determines Jupiter Age**| User Input: "Earth age * 0.24" | Output: "Jupiter age" |
+| **Program Determines Earth Life Expectancy**| User Input: "Earth age" | Output: "Earth life expectancy" |
+| **Program Determines Mercury Years Past Mercury Life Expectancy**| User Input: "Mercury age" | Output: "Mercury life expectancy" |
+| **Program Determines Venus Years Past Venus Life Expectancy**| User Input: "Venus age" | Output: "Venus life expectancy" |
+| **Program Determines Mars Years Past Mars Life Expectancy**| User Input: "Mars age" | Output: "Mars life expectancy" |
+| **Program Determines Jupiter Years Past Jupiter Life Expectancy**| User Input: "Jupiter age" | Output: "Jupiter life expectancy" |
+| **Program Displays User Data & Program Calculations**| User Input: "age + demographic data" | Output: "age + demographic data + planet ages & life expectancies" |
 
 ### Tests
 Describe: EarthAge()
