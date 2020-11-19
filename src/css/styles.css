@@ -7,3 +7,7 @@ body {
   color: #CEF2F2;
   letter-spacing: 2px;
 }
+
+#response {
+  display: none;
+}
