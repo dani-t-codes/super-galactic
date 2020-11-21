@@ -38,7 +38,7 @@ Planetary life expectancy outside of earth was based on data that suggests that 
 * _#590202 (Burnt red)_
 * _#0D0D0D (Black)_
 
-## Setup instructions
+## Installation Requirements
 ###### For Mac Users
 * _Access Terminal in your Finder, and open a new window. Install the package manager, (Homebrew) [https://brew.sh/], on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`._
 * _Ensure Homebrew packages are run with this line of code: `echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile`._
@@ -76,6 +76,7 @@ Planetary life expectancy outside of earth was based on data that suggests that 
 ### Tests
 Describe: EarthAge()
 Expect: EarthAge(30).toEqual(30)
+(Edge) cases to test for: NaN, "", >105 years old, <1 years old. 
 
 Describe: MercuryAge() 
 Test: MercuryAge(0.24 * EarthAge)
@@ -98,7 +99,7 @@ Test 1A: TODO death rate
 Expect: EarthAge(30).toEqual.EarthLifeExpectancy(85)
 
 Test 1B: subtract(EarthLifeExpectancy - xAge)
-Expect: EarthLifeExpectancy(xAge).toEqual(calculatedLengthofEarthLife)
+Expect: EarthLifeExpectancy(xAge).toEqual(earthYearsLeftToLive)
 
 Describe: MercuryLifeExpectancy()
 Test: if MercuryAge > 2 minutes, then dead. 
