@@ -10,7 +10,8 @@ describe('EarthlingData', () => {
   
   test('should correctly multiply earth age by 0.24 to get MercuryAge', () => {
     const earthling = new EarthlingData(26);
-    expect(earthAge.mercuryAge()).toEqual(8.10);
+    expect(earthling.earthAge).toEqual(26);
+    expect(earthling.mercuryAge()).toEqual(8);
   });
 });
   
