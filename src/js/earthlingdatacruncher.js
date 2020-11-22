@@ -47,15 +47,11 @@ EarthlingData.prototype.venusLifeExpectancy = function() {
 };
 
 EarthlingData.prototype.marsLifeExpectancy = function() {
-  return "You might last a couple minutes, but inevitably, you'll die here too.";
+  return "You might last a couple minutes, but inevitably, you'll die here too." + "You are " + (this.earthAge * 11.86) + " Mars years past your life expectancy";
 };
 
 EarthlingData.prototype.jupiterLifeExpectancy = function() {
   return "Quadruple dead. You'll be consumed by gas as soon as you enter the planet's atmosphere.";
-};
-
-EarthlingData.prototype.marsYrsPast = function() {
-  return "You are " + (this.earthAge * 1.88) + " Venus years past your life expectancy";
 };
 
 EarthlingData.prototype.jupiterYrsPast = function() {
