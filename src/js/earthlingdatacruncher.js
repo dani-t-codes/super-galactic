@@ -48,7 +48,7 @@ EarthlingData.prototype.jupiterLifeExpectancy = function() {
 };
 
 EarthlingData.prototype.earthYrsPast = function() {
-  return 78.7 - this.earthAge;
+  return this.earthAge - 78.7;
 }
 
 EarthlingData.prototype.mercuryYrsPast = function() {
