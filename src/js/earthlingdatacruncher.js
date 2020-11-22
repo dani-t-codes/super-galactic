@@ -47,6 +47,10 @@ EarthlingData.prototype.jupiterLifeExpectancy = function() {
   return "Quadruple dead. You'll be consumed by gas as soon as you enter the planet's atmosphere.";
 };
 
+EarthlingData.prototype.earthYrsPast = function() {
+  return 78.7 - this.earthAge;
+}
+
 EarthlingData.prototype.mercuryYrsPast = function() {
   return "You are " + (this.earthAge * 0.24) + " Mercury years past your life expectancy";
 };
