@@ -59,22 +59,11 @@ describe('EarthlingData', () => {
 
   test('should calculate Mars life expectancy based on MarsAge', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.marsLifeExpectancy()).toEqual("You might last a couple minutes, but inevitably, you'll die here too." + "You are " + 474.4 + " Mars years past your life expectancy");
+    expect(earthling.marsLifeExpectancy()).toEqual("You might last a couple minutes, but inevitably, you'll die here too." + "You are " + 75.2 + " Mars years past your life expectancy.");
   });
 
   test('should calculate Jupiter life expectancy based on JupiterAge', () => {
     const earthling = new EarthlingData(40);
     expect(earthling.jupiterLifeExpectancy()).toEqual("Quadruple dead. You'll be consumed by gas as soon as you enter the planet's atmosphere.");
   });
-
-  test('should calculate Jupiter yrs past Jupiter life expectancy', () => {
-    const earthling = new EarthlingData(40);
-    expect(earthling.jupiterYrsPast()).toEqual("You are 474.4 Jupiter years past your life expectancy");
-  });
 });
-
-//bad test
-// test('should correctly determine whether EarthlingData age is a number', () => {
-//   const notEarthling = new EarthlingData("nerd");
-//   expect(notEarthling.earthAge).toEqual(false);
-// });
