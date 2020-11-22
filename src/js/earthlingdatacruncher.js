@@ -1,7 +1,6 @@
-export default function EarthlingData (earthAge, residence, gender) {
+export default function EarthlingData (earthAge) {
   this.earthAge = earthAge;
-  this.residence = residence;
-  this.gender = gender;
+  // this.smokerStatus = smokerStatus;
 }
 
 EarthlingData.prototype.mercuryAge = function() {
@@ -18,4 +17,20 @@ EarthlingData.prototype.marsAge = function() {
 
 EarthlingData.prototype.jupiterAge = function() {
   return this.earthAge * 11.86;
+};
+
+EarthlingData.prototype.lifeExpectancy = function() {
+  let earthLifeExpectancy = 78.7;
+  // eslint-disable-next-line no-constant-condition
+  // if ('smoker' === true) {
+  //   return "smoker";
+  // //   return earthLifeExpectancy - this.earthAge - 8;
+  // } else ('smoker' === false); {
+  //   return "not a smoker";
+  return earthLifeExpectancy - this.earthAge;
+  // }
+};
+
+EarthlingData.prototype.mercuryLifeExpectancy = function() {
+  return "You're dead!";
 };
