@@ -3,8 +3,8 @@ import EarthlingData from './../src/js/EarthlingDataCruncher.js';
 describe('EarthlingData', () => {
   
   test('should correctly return EarthlingData age', () => {
-    const earthling = new EarthlingData(12);
-    expect(earthling.earthAge).toEqual(12); 
+    const earthling = new EarthlingData(12, false);
+    expect(earthling.earthAge).toEqual(12, false); 
   });
 
   
@@ -29,12 +29,12 @@ describe('EarthlingData', () => {
   });
   
   test('should calculate U.S. life expectancy based on EarthAge', () => {
-    const earthling = new EarthlingData(40);
+    const earthling = new EarthlingData(40, false);
     expect(earthling.lifeExpectancy()).toEqual(38.7);
   });
 
   test('should calculate U.S. life expectancy based on EarthAge', () => {
-    const earthling2 = new EarthlingData(90);
+    const earthling2 = new EarthlingData(90, false);
     expect(earthling2.lifeExpectancy()).toEqual(11.299999999999997);
   });
 
