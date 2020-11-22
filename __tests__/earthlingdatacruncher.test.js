@@ -7,17 +7,21 @@ describe('EarthlingData', () => {
     expect(earthling.earthAge).toEqual(12); 
   });
 
-  test('should correctly determine whether EarthlingData age is a number', () => {
-    const notEarthling = new EarthlingData("nerd");
-    expect(notEarthling.earthAge).toEqual("nerd");
+  
+  test('should correctly multiply earth age by 0.24 to get MercuryAge', () => {
+    const earthling = new EarthlingData(26);
+    expect(earthAge.mercuryAge()).toEqual(8.10);
   });
-//   test('should correctly multiply earth age by 0.24 to get MercuryAge', () => {
-//     const mercuryAge = new EarthlingData(26);
-//     expect(earthAge.mercuryAge()).toEqual(8.10);
-//   });
 });
+  
+  // EarthlingData.prototype.mercuryAge = function () {
+    //   this.earthAge *= 0.24;
+    //   console.log(this.mercuryAge);
+    // };
 
-// EarthlingData.prototype.mercuryAge = function () {
-//   this.earthAge *= 0.24;
-//   console.log(this.mercuryAge);
-// };
+
+    //bad test
+    // test('should correctly determine whether EarthlingData age is a number', () => {
+    //   const notEarthling = new EarthlingData("nerd");
+    //   expect(notEarthling.earthAge).toEqual(false);
+    // });
