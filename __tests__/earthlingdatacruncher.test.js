@@ -55,7 +55,7 @@ describe('EarthlingData', () => {
 
   test('should calculate Jupiter life expectancy based on JupiterAge', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.jupiterLifeExpectancy()).toEqual("You might last a couple minutes, but inevitably, you'll die here too.");
+    expect(earthling.jupiterLifeExpectancy()).toEqual("Quadruple dead. You'll be consumed by gas as soon as you enter the planet's atmosphere.");
   });
 });
 
