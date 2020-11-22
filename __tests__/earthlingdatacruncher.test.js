@@ -75,7 +75,7 @@ describe('EarthlingData', () => {
 
   test('should calculate Jupiter yrs past Jupiter life expectancy', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.JupiterYrsPast()).toEqual("You are 75.19999999999999 Venus years past your life expectancy");
+    expect(earthling.jupiterYrsPast()).toEqual("You are 20 Jupiter years past your life expectancy");
   });
 });
 
