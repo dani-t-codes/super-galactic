@@ -42,3 +42,7 @@ EarthlingData.prototype.venusLifeExpectancy = function() {
 EarthlingData.prototype.marsLifeExpectancy = function() {
   return "You might last a couple minutes, but inevitably, you'll die here too.";
 };
+
+EarthlingData.prototype.jupiterLifeExpectancy = function() {
+  return "Quadruple dead. You'll be consumed by gas as soon as you enter the planet's atmosphere.";
+};
