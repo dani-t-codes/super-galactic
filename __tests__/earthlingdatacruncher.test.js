@@ -25,6 +25,12 @@ describe('EarthlingData', () => {
     expect(earthling3.earthAge).toEqual(40);
     expect(earthling3.marsAge()).toEqual(75.19999999999999);
   });
+
+  test('should correctly multiply earth age by 11.86 to get JupiterAge', () => {
+    const earthling4 = new EarthlingData(40);
+    expect(earthling4.earthAge).toEqual(40);
+    expect(earthling4.jupiterAge()).toEqual(75.19999999999999);
+  });
   
 });
     //bad test
