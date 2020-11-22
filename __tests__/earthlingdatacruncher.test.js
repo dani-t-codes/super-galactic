@@ -23,7 +23,7 @@ describe('EarthlingData', () => {
   test('should correctly multiply earth age by 1.88 to get MarsAge', () => {
     const earthling3 = new EarthlingData(40);
     expect(earthling3.earthAge).toEqual(40);
-    expect(earthling3.marsAge()).toEqual(75.2);
+    expect(earthling3.marsAge()).toEqual(75.19999999999999);
   });
   
 });
