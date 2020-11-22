@@ -52,6 +52,11 @@ describe('EarthlingData', () => {
     const earthling = new EarthlingData(40);
     expect(earthling.marsLifeExpectancy()).toEqual("You might last a couple minutes, but inevitably, you'll die here too.");
   });
+
+  test('should calculate Jupiter life expectancy based on JupiterAge', () => {
+    const earthling = new EarthlingData(40);
+    expect(earthling.jupiterLifeExpectancy()).toEqual("You might last a couple minutes, but inevitably, you'll die here too.");
+  });
 });
 
 //bad test
