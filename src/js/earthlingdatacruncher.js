@@ -19,15 +19,19 @@ EarthlingData.prototype.jupiterAge = function() {
   return this.earthAge * 11.86;
 };
 
+// eslint-disable-next-line no-constant-condition
+// if ('smoker' === true) {
+//   return "smoker";
+// //   return earthLifeExpectancy - this.earthAge - 8;
+// } else ('smoker' === false); {
+//   return "not a smoker";
 EarthlingData.prototype.lifeExpectancy = function() {
   let earthLifeExpectancy = 78.7;
-  // eslint-disable-next-line no-constant-condition
-  // if ('smoker' === true) {
-  //   return "smoker";
-  // //   return earthLifeExpectancy - this.earthAge - 8;
-  // } else ('smoker' === false); {
-  //   return "not a smoker";
-  return earthLifeExpectancy - this.earthAge;
+  if (earthLifeExpectancy > this.earthAge) {
+    return earthLifeExpectancy - this.earthAge;
+  } else if (earthLifeExpectancy < this.earthAge) {
+    return this.earthAge - earthLifeExpectancy;
+  }
   // }
 };
 
@@ -47,9 +51,6 @@ EarthlingData.prototype.jupiterLifeExpectancy = function() {
   return "Quadruple dead. You'll be consumed by gas as soon as you enter the planet's atmosphere.";
 };
 
-EarthlingData.prototype.earthYrsPast = function() {
-  return this.earthAge - 78.7;
-}
 
 EarthlingData.prototype.mercuryYrsPast = function() {
   return "You are " + (this.earthAge * 0.24) + " Mercury years past your life expectancy";
