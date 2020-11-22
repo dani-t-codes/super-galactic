@@ -70,7 +70,7 @@ describe('EarthlingData', () => {
 
   test('should calculate Mars yrs past Mars life expectancy', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.marsYrsPast()).toEqual("You are 24.8 Mars years past your life expectancy");
+    expect(earthling.marsYrsPast()).toEqual("You are 75.19999999999999 Venus years past your life expectancy");
   });
 });
 
