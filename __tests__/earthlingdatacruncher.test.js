@@ -60,7 +60,7 @@ describe('EarthlingData', () => {
 
   test('should calculate Mercury yrs past Mercury life expectancy', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.mercuryYrsPast()).toEqual("something new")
+    expect(earthling.mercuryYrsPast()).toEqual("You are 9.6 Mercury years past your life expectancy")
   });
 });
 
