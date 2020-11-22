@@ -54,3 +54,7 @@ EarthlingData.prototype.mercuryYrsPast = function() {
 EarthlingData.prototype.venusYrsPast = function() {
   return "You are " + (this.earthAge * 0.62) + " Venus years past your life expectancy";
 };
+
+EarthlingData.prototype.marsYrsPast = function() {
+  return "You are " + (this.earthAge * 1.88) + " Venus years past your life expectancy";
+};
