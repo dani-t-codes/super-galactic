@@ -39,11 +39,11 @@ EarthlingData.prototype.lifeExpectancy = function() {
 };
 
 EarthlingData.prototype.mercuryLifeExpectancy = function() {
-  return "You're dead!" + "You are " + (this.earthAge * 0.24) + " Mercury years past your life expectancy";
+  return "You're dead!" + "You are " + (this.earthAge * 0.24) + " Mercury years past your life expectancy.";
 };
 
 EarthlingData.prototype.venusLifeExpectancy = function() {
-  return "You're ALSO dead!";
+  return "You're ALSO dead!" + "You are " + (this.earthAge * 0.62) + " Venus years past your life expectancy.";
 };
 
 EarthlingData.prototype.marsLifeExpectancy = function() {
@@ -52,11 +52,6 @@ EarthlingData.prototype.marsLifeExpectancy = function() {
 
 EarthlingData.prototype.jupiterLifeExpectancy = function() {
   return "Quadruple dead. You'll be consumed by gas as soon as you enter the planet's atmosphere.";
-};
-
-
-EarthlingData.prototype.venusYrsPast = function() {
-  return "You are " + (this.earthAge * 0.62) + " Venus years past your life expectancy";
 };
 
 EarthlingData.prototype.marsYrsPast = function() {
