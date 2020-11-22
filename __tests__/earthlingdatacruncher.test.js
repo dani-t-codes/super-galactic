@@ -58,6 +58,11 @@ describe('EarthlingData', () => {
     expect(earthling.jupiterLifeExpectancy()).toEqual("Quadruple dead. You'll be consumed by gas as soon as you enter the planet's atmosphere.");
   });
 
+  test('should calculate Earth yrs past Earth life expectancy', () => {
+    const earthling = new EarthlingData(40);
+    expect(earthling.earthYrsPast()).toEqual("You are 9.6 Earth years past your life expectancy")
+  });
+
   test('should calculate Mercury yrs past Mercury life expectancy', () => {
     const earthling = new EarthlingData(40);
     expect(earthling.mercuryYrsPast()).toEqual("You are 9.6 Mercury years past your life expectancy")
