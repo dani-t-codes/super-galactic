@@ -2,9 +2,14 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import EarthlingData from './earthlingdatacruncher.js';
+import EarthlingData from './js/EarthlingDataCruncherearthlingdatacruncher.js';
 // import MercuryData from './mercurydata.js'
 
+//Business Logic
+
+
+
+//UI Logic
 $('#galactic-age-calculator').submit(function(event) {
   event.preventDefault();
   const earthAge = $('#earth-age').val();
