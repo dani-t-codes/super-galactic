@@ -1,4 +1,4 @@
-import EarthlingData from './../src/earthlingdatacruncher.js';
+import EarthlingData from './../src/js/EarthlingDataCruncher.js';
 
 describe('EarthlingData', () => {
   
