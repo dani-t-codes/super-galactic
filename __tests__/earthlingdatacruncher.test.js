@@ -45,7 +45,7 @@ describe('EarthlingData', () => {
 
   test('should calculate Venus life expectancy based on VenusAge', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.venusLifeExpectancy()).toEqual("something");
+    expect(earthling.venusLifeExpectancy()).toEqual("You're ALSO dead!");
   });
 });
 
