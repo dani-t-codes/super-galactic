@@ -59,7 +59,7 @@ describe('EarthlingData', () => {
 
   test('should calculate Mars life expectancy based on MarsAge', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.marsLifeExpectancy()).toEqual("You might last a couple minutes, but inevitably, you'll die here too." + "You are " + 75.2 + " Mars years past your life expectancy.");
+    expect(earthling.marsLifeExpectancy()).toEqual("You might last a couple minutes, but inevitably, you'll die here too." + "You are " + 75.19999999999999 + " Mars years past your life expectancy.");
   });
 
   test('should calculate Jupiter life expectancy based on JupiterAge', () => {
