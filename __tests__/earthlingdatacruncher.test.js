@@ -29,10 +29,14 @@ describe('EarthlingData', () => {
   });
   
   test('should calculate U.S. life expectancy based on EarthAge', () => {
-    const earthling = new EarthlingData(40, "smoker");
-    expect(earthling.lifeExpectancy()).toEqual("smoker");
+    const earthling = new EarthlingData(40);
+    expect(earthling.lifeExpectancy()).toEqual(38.7);
   });
 
+  test('should calculate Mercury life expectancy based on MercuryAge', () => {
+    const earthling = new EarthlingData(40);
+    expect(earthling.mercuryLifeExpectancy()).toEqual(30);
+  });
 });
 
 //bad test
