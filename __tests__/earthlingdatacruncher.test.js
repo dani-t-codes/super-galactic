@@ -39,12 +39,12 @@ describe('EarthlingData', () => {
   });
   test('should calculate U.S. life expectancy based on EarthAge', () => {
     const earthling2 = new EarthlingData(40, true);
-    expect(earthling2.lifeExpectancy()).toEqual("38.7 years left to live.");
+    expect(earthling2.lifeExpectancy()).toEqual("30.700000000000003 years left to live.");
   });
 
   test('should calculate U.S. life expectancy based on EarthAge', () => {
     const earthling2 = new EarthlingData(90, true);
-    expect(earthling2.lifeExpectancy()).toEqual("11.299999999999997 years past average US life expectancy.");
+    expect(earthling2.lifeExpectancy()).toEqual("3.299999999999997 years past average US life expectancy.");
   });
 
   test('should calculate Mercury life expectancy based on MercuryAge', () => {
