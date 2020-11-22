@@ -62,6 +62,11 @@ describe('EarthlingData', () => {
     const earthling = new EarthlingData(40);
     expect(earthling.mercuryYrsPast()).toEqual("You are 9.6 Mercury years past your life expectancy")
   });
+
+  test('should calculate Venus yrs past Venus life expectancy', () => {
+    const earthling = new EarthlingData(40);
+    expect(earthling.venusYrsPast()).toEqual("You're ALSO dead!");
+  });
 });
 
 //bad test
