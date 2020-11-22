@@ -17,7 +17,7 @@ describe('EarthlingData', () => {
   test('should correctly multiply earth age by 0.62 to get VenusAge', () => {
     const earthling2 = new EarthlingData(40);
     expect(earthling2.earthAge).toEqual(40);
-    expect(earthling2.venusAge()).toEqual(6.24);
+    expect(earthling2.venusAge()).toEqual(24.8);
   });
   
 });
