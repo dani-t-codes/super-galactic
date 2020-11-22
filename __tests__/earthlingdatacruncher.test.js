@@ -30,7 +30,7 @@ describe('EarthlingData', () => {
   
   test('should calculate U.S. life expectancy based on EarthAge', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.lifeExpectancy()).toEqual(38.7);
+    expect(earthling.lifeExpectancy()).toEqual(20);
   });
 
   test('should calculate Mercury life expectancy based on MercuryAge', () => {
@@ -58,14 +58,9 @@ describe('EarthlingData', () => {
     expect(earthling.jupiterLifeExpectancy()).toEqual("Quadruple dead. You'll be consumed by gas as soon as you enter the planet's atmosphere.");
   });
 
-  test('should calculate Earth yrs past Earth life expectancy', () => {
-    const earthling = new EarthlingData(40);
-    expect(earthling.earthYrsPast()).toEqual(-38.7);
-  });
-
   test('should calculate Mercury yrs past Mercury life expectancy', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.mercuryYrsPast()).toEqual("You are 9.6 Mercury years past your life expectancy")
+    expect(earthling.mercuryYrsPast()).toEqual("You are 9.6 Mercury years past your life expectancy");
   });
 
   test('should calculate Venus yrs past Venus life expectancy', () => {
