@@ -38,3 +38,7 @@ EarthlingData.prototype.mercuryLifeExpectancy = function() {
 EarthlingData.prototype.venusLifeExpectancy = function() {
   return "You're ALSO dead!";
 };
+
+EarthlingData.prototype.marsLifeExpectancy = function() {
+  return "You might last a couple minutes, but inevitably, you'll die here too.";
+};
