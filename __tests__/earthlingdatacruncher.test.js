@@ -49,7 +49,7 @@ describe('EarthlingData', () => {
 
   test('should calculate Mercury life expectancy based on MercuryAge', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.mercuryLifeExpectancy()).toEqual("You're dead!" + "You are 12 Mercury years past your life expectancy");
+    expect(earthling.mercuryLifeExpectancy()).toEqual("You're dead!" + "You are 9.6 Mercury years past your life expectancy");
   });
 
   test('should calculate Venus life expectancy based on VenusAge', () => {
