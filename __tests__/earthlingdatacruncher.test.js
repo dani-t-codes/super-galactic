@@ -35,7 +35,7 @@ describe('EarthlingData', () => {
 
   test('should calculate U.S. life expectancy based on EarthAge', () => {
     const earthling2 = new EarthlingData(90);
-    expect(earthling2.lifeExpectancy()).toEqual(20);
+    expect(earthling2.lifeExpectancy()).toEqual(11.299999999999997);
   });
 
   test('should calculate Mercury life expectancy based on MercuryAge', () => {
