@@ -29,7 +29,7 @@ describe('EarthlingData', () => {
   });
   
   test('should calculate U.S. life expectancy based on EarthAge', () => {
-    const earthling = new EarthlingData(40, "not a smoker");
+    const earthling = new EarthlingData(40, "smoker");
     expect(earthling.lifeExpectancy()).toEqual("smoker");
   });
 
