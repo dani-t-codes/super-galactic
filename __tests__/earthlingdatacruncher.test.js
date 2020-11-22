@@ -57,6 +57,11 @@ describe('EarthlingData', () => {
     const earthling = new EarthlingData(40);
     expect(earthling.jupiterLifeExpectancy()).toEqual("Quadruple dead. You'll be consumed by gas as soon as you enter the planet's atmosphere.");
   });
+
+  test('should calculate Mercury yrs past Mercury life expectancy', () => {
+    const earthling = new EarthlingData(40);
+    expect(earthling.mercuryYrsPast()).toEqual("something new")
+  });
 });
 
 //bad test
