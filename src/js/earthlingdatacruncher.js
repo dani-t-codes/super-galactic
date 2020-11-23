@@ -44,7 +44,7 @@ EarthlingData.prototype.venusLifeExpectancy = function() {
 };
 
 EarthlingData.prototype.marsLifeExpectancy = function() {
-  return "<p>... I have to be the one to break it to you, but I have more bad news. While Mars has long been considered for potential human residence, without a spacesuit, a human would still die within two minutes because there is no air on Mars that we can breathe, and the silicone dust on the planet would quickly suffocate us. Double yikes! You might last a couple minutes, but inevitably, you'll die here too.</p> <p>You are " + (this.earthAge * 1.88) + " Mars years past your Mars life expectancy.</p>";
+  return "<p>... I hate to be the one to break it to you, but I have more bad news. While Mars has long been considered for potential human residence, without a spacesuit, a human would still die within two minutes because there is no air on Mars that we can breathe, and the silicone dust on the planet would quickly suffocate us. Double yikes! You might last a couple minutes, but inevitably, you'll die here too.</p> <p>You are " + (this.earthAge * 1.88) + " Mars years past your Mars life expectancy.</p>";
 };
 
 EarthlingData.prototype.jupiterLifeExpectancy = function() {

@@ -57,7 +57,7 @@ describe('EarthlingData', () => {
 
   test('should calculate Mars life expectancy based on MarsAge', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.marsLifeExpectancy()).toEqual("You might last a couple minutes, but inevitably, you'll die here too." + "You are " + 75.19999999999999 + " Mars years past your life expectancy.");
+    expect(earthling.marsLifeExpectancy()).toEqual("<p>... I hate to be the one to break it to you, but I have more bad news. While Mars has long been considered for potential human residence, without a spacesuit, a human would still die within two minutes because there is no air on Mars that we can breathe, and the silicone dust on the planet would quickly suffocate us. Double yikes! You might last a couple minutes, but inevitably, you'll die here too.</p> <p>You are 75.19999999999999 Mars years past your Mars life expectancy.</p>");
   });
 
   test('should calculate Jupiter life expectancy based on JupiterAge', () => {
