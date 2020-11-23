@@ -1,26 +1,27 @@
 # Application name "Super Galactic Age Calculator"
 
-#### Test Driven Development & Environments with Javascript Practice for Epicodus, 11.13.20
+#### Test Driven Development & Environments with Javascript, Practice for Epicodus, 11.13.20
 
 #### By Danielle Thompson
 
 ## Description
-While a solar year lasts 365 on planet Earth, no planet in our solar system shares the same solar year length. This application determines both a user's age and life expectancy for the planets Earth, Mercury, Venus, Mars, and Jupiter. 
+While a solar year lasts 365 days on planet Earth, no planet in our solar system shares the same solar year length. This application determines both a user's age and life expectancy for the planets Earth, Mercury, Venus, Mars, and Jupiter.
 
-Earth life expectancy is calculated based on death probabilities according to Farr's death rate method: qx = Mx / (Bx + (Mx/2)) where Mx = number of deaths at age of x to under x+1 years in the reported period; Bx = average population aged x to under x+1 in the base period; qx = death probability from age x to x+1. Relevant demographic data includes: 
-* Current age
-* Calendar year
-* Country
-* Region (according to ISARE recommendations) 
-* Gender
-* Age group
-* Socio-economic status
+The life expectancy calculation is quite simple, and is just based on the United States' average life expectancy data from 2018 (see link below) plus demographic information about whether the user smokes or not. 
 
-(Additional factors to consider for calculating death rates could include weight, height, education level, marital status, retirement status, annual income, frequency of exercise, general health, smoker/non-smoker status, alcoholic beverages per week. However, these and other potential factors will not be considered for the purposes of this application.)
+### References
+Life Expectancy Data source (2018): [https://www.cdc.gov/nchs/fastats/life-expectancy.htm].
 
-Planetary life expectancy outside of earth was based on data that suggests that if an interplanetary traveler visited Mercury, Venus, or Jupiter, with or without a spacesuit, they would die quickly, in some cases even before touching down on some planet's surfaces. A person would be dead in two minutes or less upon arrival to Mercury as the extreme heat or extreme cold, depending on which side of the planet you were on in relation to the sun, would be too much for the human body to handle. Venus's extreme temperates of at least 470 degrees Celsius would consume a human body in less than a second. Jupiter does not even have a surface, as the planet is composed largely of hydrogen & helium gases, so a person would die before ever even touching the "surface". While Mars has long been considered for potential human residence, without a spacesuit, a human would still die within two minutes because there is no air we can breathe, and the silicone dust on the planet would quickly suffocate us. In all cases, the user will see how many x planet years your are past x planet's life expectancy (of zero). (For reference, please visit (Seeker)[https://www.seeker.com/videos/space-innovation/how-long-could-you-survive-on-other-planets]).
+(For reference, please visit (Seeker)[https://www.seeker.com/videos/space-innovation/how-long-could-you-survive-on-other-planets]).
 
-## Technologies used
+### Color theme
+* _#2E3C8C (Med-dark blue)_
+* _#CEF2F2 (Light blue)_
+* _#F2600C (Orange)_
+* _#590202 (Burnt red)_
+* _#0D0D0D (Black)_
+
+### Technologies used
 * _ES6 Javascript_
 * _Bootstrap_
 * _jQuery_
@@ -30,13 +31,6 @@ Planetary life expectancy outside of earth was based on data that suggests that 
 * _ES Lint_
 * _Jest_
 * _Babel_
-
-## Color theme
-* _#2E3C8C (Med-dark blue)_
-* _#CEF2F2 (Light blue)_
-* _#F2600C (Orange)_
-* _#590202 (Burnt red)_
-* _#0D0D0D (Black)_
 
 ## Installation Requirements
 ###### For Mac Users
@@ -74,6 +68,9 @@ Planetary life expectancy outside of earth was based on data that suggests that 
 | **Program Displays User Data & Program Calculations**| User Input: "age + demographic data" | Output: "age + demographic data + planet ages & life expectancies" |
 
 ### Tests
+Describe: EarthlingData()
+Expect: EarthlingData (earthAge, T/F)
+
 Describe: EarthAge()
 Expect: EarthAge(30).toEqual(30)
 (Edge) cases to test for: NaN, "", >105 years old, <1 years old. 
@@ -95,11 +92,8 @@ Test: JupiterAge(11.86 * EarthAge)
 Expect: JupiterAge(30).toEqual(355.8)
 
 Describe: EarthLifeExpectancy()
-Test 1A: TODO death rate
-Expect: EarthAge(30).toEqual.EarthLifeExpectancy(85)
-
-Test 1B: subtract(EarthLifeExpectancy - xAge)
-Expect: EarthLifeExpectancy(xAge).toEqual(earthYearsLeftToLive)
+Test 1A: If smoker, (EarthLifeExpectancy- 8) && (xAge - U.S. average lifespan of 78.7)
+Expect: EarthAge(30, smoker).toEqual.EarthLifeExpectancy(40.7)
 
 Describe: MercuryLifeExpectancy()
 Test: if MercuryAge > 2 minutes, then dead. 
@@ -119,10 +113,37 @@ Describe: JupiterLifeExpectancy()
 Test: if JupiterAge > 0 seconds, then dead. 
 Expect: JupiterLifeExpectancy(JupiterAge = 355.8).toEqual(355.8)
 
+### Stretch Goals
 
-## (Optional) Known bugs
+Ideally, this application would take in more than just two pieces of demographic data from the user, and would include more data than just from the United States. Perhaps it could even benefit from the added use of an API that has pertinent mortality rate and/or life expectancy data. 
 
-_{I am Danielle's *bug* that needs fixing. I might impact this app by doing xyz. But you can do abc to get around me. Can do future fix me plz!}_
+Other relevant demographic data could include: 
+* Current age
+* Calendar year
+* Country
+* Region
+* Gender
+* Age group
+* Socio-economic status
+* Weight 
+* Height 
+* Education level 
+* Marital status
+* Retirement status 
+* Annual income
+* Frequency of exercise
+* General health
+* Alcoholic beverages per week. 
+
+However, these and other potential factors will not be considered for the purposes of this application, simply for the sake of scope and brevity to the project's current purpose.
+
+It might be possible to continue doing some refactoring work on the earthling data page with an ES6 class extend, to refactor the business logic into smaller chunks. 
+
+Additionally, there are some exceptions that could add functionality to the project, including if a user enters a value that is not a number or doesn't answer all questions. 
+
+## Known bugs
+
+As of 11.23.2020, there is one bug that I am aware of where the earth life expectancy formula stopped printing to the display section of the user interface. Data point was printing, but stopped somewhere along the way of adding features to the stylesheet and index pages. 
 
 ### Legal, or License 
 

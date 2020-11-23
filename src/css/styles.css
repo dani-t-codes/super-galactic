@@ -28,6 +28,7 @@ h2 {
 .card {
   background-color: #590202;
   opacity: 80%;
+  width: 300px;
 }
 
 .jumbotron {
@@ -47,4 +48,23 @@ h2 {
 
 #display-results {
   display: none;
+  width: auto;
+}
+
+.card {
+  border-color: #F2600C;
+  width: 400px;
+}
+
+.row {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#card-center, #earth-center{
+  align-items: center;
+}
+
+#youre-dead {
+  align-self: center;
 }
