@@ -62,6 +62,6 @@ describe('EarthlingData', () => {
 
   test('should calculate Jupiter life expectancy based on JupiterAge', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.jupiterLifeExpectancy()).toEqual("Quadruple dead. You'll be consumed by gas as soon as you enter the planet's atmosphere." + "You are " + 474.4 + " Jupiter years past your life expectancy.");
+    expect(earthling.jupiterLifeExpectancy()).toEqual("<p>...Zoinks! You are all out of luck today, my friend. Jupiter doesn't even have a surface for you to land on - just a bunch of swirling hydrogen & helium gases. If you go to Jupiter, you will be consumed by gas as soon as you enter the planet's atmosphere.</p> <p>You are 474.4 Jupiter years past your Jupiter life expectancy.</p>");
   });
 });
