@@ -137,7 +137,7 @@ Other relevant demographic data could include:
 
 However, these and other potential factors will not be considered for the purposes of this application, simply for the sake of scope and brevity to the project's current purpose.
 
-It might be possible to continue doing some refactoring work on the earthling data page with an ES6 class extend, to refactor the business logic into smaller chunks. 
+It might be possible to continue doing some refactoring work on the earthling data page with an ES6 class extend, to refactor the business logic into smaller chunks. In terms of cleaning up what the user sees, the ages and life expectancies returned could also get limited to X number of decimal points. 
 
 Additionally, there are some exceptions that could add functionality to the project, including if a user enters a value that is not a number or doesn't answer all questions. 
 
