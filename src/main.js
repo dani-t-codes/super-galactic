@@ -1,21 +1,22 @@
+/* eslint-disable no-unused-vars */
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import EarthlingData from './js/EarthlingDataCruncherearthlingdatacruncher.js';
-// import MercuryData from './mercurydata.js'
-
-//Business Logic
-
-
+import EarthlingData from './js/EarthlingDataCruncher.js';
 
 //UI Logic
-$('#galactic-age-calculator').submit(function(event) {
-  event.preventDefault();
-  const earthAge = $('#earth-age').val();
-  const residence = $('#residence').val();
-  const gender = $('#gender').val();
-  const earthling = new EarthlingData(earthAge, residence, gender);
-  const mercuryAge = earthling.crunchNumbers();
-  $('#response').append("<p>" + response + "</p>");
+$(document).ready(function() {
+  $('#galactic-age-calculator').submit(function(event) {
+    event.preventDefault();
+    const earthAge = $('#earth-age').val();
+    const smokerStatus = $('#smokerStatus').val();
+    const earthling = new EarthlingData(earthAge, smokerStatus);
+    $('#show-earth-age').html(`${earthAge}`);
+    $('#show-earth-age').html(earthling.mercuryAge());
+    $('#show-venus-age').html(earthling.venusAge());
+    $('#show-mars-age').html(earthling.marsAge());
+    $('#show-jupiter-age').html(earthling.jupiterAge());
+    $('#display-results').show();
+  });
 });
