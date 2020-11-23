@@ -1,11 +1,36 @@
 body {
-  background-image: url("/assets/images/solar-system-439046_1920.jpg");
-  height: 200px;
+  background-image: url("../../assets/images/solar-system-439046_1920.jpg");
+  height: auto;
   background-repeat: no-repeat;
   background-color: #2E3C8C;
   background-position: center;
   color: #CEF2F2;
   letter-spacing: 2px;
+  font-family: monospace;
+}
+
+h1 {
+  font-size: 35pt;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+.jumbotron {
+  background-color: #590202;
+  opacity: 80%;
+}
+
+#galactic-age-calculator {
+  width: 210px;
+}
+
+#submit-button {
+  background-color: #F2600C;
+  opacity: 90%;
+  letter-spacing: 3px;
 }
 
 #display-results {

@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <title>Super Galactic Age Calculator</title>
-</head>
-<body>
-  <h3>Enter your age to determine your inter-planetary ages.</h3>
-  <form id="galactic-age-calculator">
-    <label for="earth-age">Enter your Earth age:</label>
-    <input id="earth-age" type="number">
-    <label for="residence">Enter your country of residence:</label>
-    <input id="residence" type="text">
-    <label for="gender">Enter your gender:</label>
-    <input id="gender" type="text">
-    <button type="submit">Submit</button>
-  </form>
-  <div id="display-results">
-    Your Earth age is: 
-    <p id="display-earth-age"></p>
-    Your Mercury age is: 
-    <p id="mercury-age"></p>
-    Your Venus age is: 
-    <p id="venus-age"></p>
-    Your Mars age is:
-    <p id="mars-age"></p>
-    Your Jupiter age is:
-    <p id="jupiter-age"></p>
-  </div> 
-</body>
+  <head>
+    <title>Super Galactic Age Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Super Galactic Age & Life Expectancy Calculator</h1>
+        <h2>Enter your current Earth age to determine your inter-planetary ages.</h2>
+      </div>
+      <form id="galactic-age-calculator">
+        <div class="form-group" id="earth-age">
+          <label for="earth-age">Enter your Earth age:</label>
+          <input class="form-control" id="earth-age" type="number">
+        </div>
+        <div class="form-group">
+          <label for="smoker-status">Are you a smoker?</label>
+          <select class="form-control" id="smoker-status">
+            <option value="true" name="yes">Yes</option>
+            <option value="false" name="no">No</option>
+          </select>
+        </div>
+        <button type="submit" class="btn" id="submit-button">Submit</button>
+        <div id="display-results">
+          Your Earth age is: 
+          <p id="show-earth-age"></p>
+          Your Mercury age is: 
+          <p id="show-mercury-age"></p>
+          Your Venus age is: 
+          <p id="show-venus-age"></p>
+          Your Mars age is:
+          <p id="show-mars-age"></p>
+          Your Jupiter age is:
+          <p id="show-jupiter-age"></p>
+        </div> 
+      </form>
+    </div>
+  </body>
 </html>
