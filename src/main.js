@@ -11,7 +11,7 @@ $(document).ready(function() {
     event.preventDefault();
     const earthAge = $('#earth-age').val();
     const smokerStatus = $('#smokerStatus').val();
-    const earthling = new EarthlingData(earthAge, smokerStatus);
+    const earthling = new EarthlingData(`${earthAge}`, `${smokerStatus}`);
     $('#show-earth-age').html(`${earthAge}`);
     $('#show-earth-age').html(earthling.mercuryAge());
     $('#show-venus-age').html(earthling.venusAge());
