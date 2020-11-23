@@ -52,7 +52,7 @@ describe('EarthlingData', () => {
 
   test('should calculate Venus life expectancy based on VenusAge', () => {
     const earthling = new EarthlingData(40);
-    expect(earthling.venusLifeExpectancy()).toEqual("You're ALSO dead!" + "You are 24.8 Venus years past your life expectancy.");
+    expect(earthling.venusLifeExpectancy()).toEqual("<p>... yikes, you're having a rough day of interplanetary travel. Venus's extreme temperatures of at least 470 degrees Celsius would consume a human body in less than a second.</p> <p>You are 24.8 Venus years past your Venus life expectancy.</p>");
   });
 
   test('should calculate Mars life expectancy based on MarsAge', () => {
