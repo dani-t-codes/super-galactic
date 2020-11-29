@@ -143,7 +143,7 @@ Additionally, there are some exceptions that could add functionality to the proj
 
 ## Known bugs
 
-As of 11.23.2020, there is one bug that I am aware of where the earth life expectancy formula stopped printing to the display section of the user interface. Data point was printing, but stopped somewhere along the way of adding features to the stylesheet and index pages. 
+As of 11.23.2020, there is one bug that I am aware of where the earth life expectancy formula stopped printing to the display section of the user interface and is now returning "undefined" in console. Data point was formerly printing appropriately, but stopped somewhere along the way of adding features to the stylesheet and index pages. Javascript code was not modified for the affiliated function and tests for the function all still pass. 
 
 ### Legal, or License 
 
