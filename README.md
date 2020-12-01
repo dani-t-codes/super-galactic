@@ -49,7 +49,9 @@ Life Expectancy Data source (2018): [https://www.cdc.gov/nchs/fastats/life-expec
 * _Go to the (Node.js website)[https://nodejs.org/en/download/] and download the appropriate source code for your Windows operating system._ 
 
 ###### For Both Mac & Windows systems
-* _Once the project has been cloned to your computer, run `npm run start` to open a live session of the application from your preferred code editor. (Visual Code Studio)[https://code.visualstudio.com/] was used and is recommended by the application builder._
+* _Once the project has been cloned to your computer and you have all the necessary items on your local computer, open the project in the application of your choice, and run `npm install` to get the appropriate dependencies from Node.js in the project._
+* _From there, you can run `npm run test` to run the package's test script(s)._
+* _If you run `npm run start`, you will be able to open a live session of the application from your preferred code editor. ((Visual Code Studio)[https://code.visualstudio.com/] was used and is recommended by the application builder.)_
 
 ### Specs
 | Spec | Input | Output |
