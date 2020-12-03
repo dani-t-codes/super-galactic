@@ -1,5 +1,5 @@
 export default class EarthlingData {
-  construction(earthAge, boolean) {
+  constructor(earthAge, boolean) {
     this.earthAge = earthAge;
     this.smokerStatus = boolean;
   }
