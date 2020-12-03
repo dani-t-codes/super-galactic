@@ -94,8 +94,8 @@ Test: jupiterAge(11.86 * earthAge)
 Expect: jupiterAge(30).toEqual(355.8)
 
 Describe: earthLifeExpectancy()
-Test 1A: If smoker, (earthLifeExpectancy- 8) && (xAge - U.S. average lifespan of 78.7)
-Expect: earthAge(30, smoker).toEqual.earthLifeExpectancy(40.7)
+Test: 78.7 - earthAge
+Expect: earthAge(30).toEqual.earthLifeExpectancy(48.7)
 
 Describe: mercuryLifeExpectancy()
 Test: if mercuryAge > 2 minutes, then dead. 
@@ -117,7 +117,7 @@ Expect: jupiterLifeExpectancy(jupiterAge = 355.8).toEqual(355.8)
 
 ### Stretch Goals
 
-Ideally, this application would take in more than just two pieces of demographic data from the user, and would include more data than just from the United States. Perhaps it could even benefit from the added use of an API that has pertinent mortality rate and/or life expectancy data. 
+Ideally, this application would take in more than just one pieces of demographic data from the user, and would include more data than just from the United States. Perhaps it could even benefit from the added use of an API that has pertinent mortality rate and/or life expectancy data. 
 
 Other relevant demographic data could include: 
 * Current age
@@ -145,7 +145,7 @@ Additionally, there are some exceptions that could add functionality to the proj
 
 ## Known bugs
 
-As of 11.23.2020, there is one bug that I am aware of where the earth life expectancy formula stopped printing to the display section of the user interface and is now returning "undefined" in console. Data point was formerly printing appropriately, but stopped somewhere along the way of adding features to the stylesheet and index pages. Javascript code was not modified for the affiliated function and tests for the function all still pass. 
+As of 12.2.2020, there is one bug that I am aware of where the earth life expectancy formula will print "78.7 years left to live" if nothing is entered in the Earth age input. 
 
 ### Legal, or License 
 
