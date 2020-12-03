@@ -1,4 +1,4 @@
-import EarthlingData from './../src/js/EarthlingDataCruncher.js';
+import EarthlingData from '../src/js/earthlingDataCruncher.js';
 
 describe('EarthlingData', () => {
 
@@ -42,6 +42,10 @@ describe('EarthlingData', () => {
   test('should calculate U.S. life expectancy based on EarthAge', () => {
     const earthling2 = new EarthlingData(90, false);
     expect(earthling2.lifeExpectancy()).toEqual("11.299999999999997 years past average US life expectancy.");
+  });
+  test('should calculate U.S. life expectancy based on EarthAge', () => {
+    const earthling2 = new EarthlingData(90, false);
+    expect(earthling2.lifeExpectancy()).toEqual("");
   });
 
   test('should calculate Mercury life expectancy based on MercuryAge', () => {

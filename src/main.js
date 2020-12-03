@@ -6,26 +6,27 @@ import EarthlingData from './js/EarthlingDataCruncher.js';
 
 //UI Logic
 $(document).ready(function() {
-  $('#galactic-age-calculator').submit(function(event) {
+  $('#galacticAgeCalculator').submit(function(event) {
     event.preventDefault();
-    const earthAge = $('#earth-age').val();
-    const smokerStatus = $('#smoker-status').val();
+    const earthAge = $('#earthAge').val();
+    const smokerStatus = $('#smokerStatus').val();
     const earthling = new EarthlingData(earthAge, smokerStatus);
     //clear forms, show hidden section
-    $('#display-results').show();
-    $('input#earth-age').val("");
-    $('input#smoker-status').val("");
+    $('#displayResults').show();
+    $('input#earthAge').val("");
+    $('input#smokerStatus').val("");
     //age calculations
-    $('#show-earth-age').html(`${earthAge}`);
-    $('#show-mercury-age').html(earthling.mercuryAge());
-    $('#show-venus-age').html(earthling.venusAge());
-    $('#show-mars-age').html(earthling.marsAge());
-    $('#show-jupiter-age').html(earthling.jupiterAge());
+    $('#showEarthAge').html(`${earthAge}`);
+    $('#showMercuryAge').html(earthling.mercuryAge());
+    $('#showVenusAge').html(earthling.venusAge());
+    $('#showMarsAge').html(earthling.marsAge());
+    $('#showJupiterAge').html(earthling.jupiterAge());
     //life expectancy calculations
-    $('#earth-life-expectancy').html(earthling.lifeExpectancy());
-    $('#mercury-life-expectancy').html(earthling.mercuryLifeExpectancy());
-    $('#venus-life-expectancy').html(earthling.venusLifeExpectancy());
-    $('#mars-life-expectancy').html(earthling.marsLifeExpectancy());
-    $('#jupiter-life-expectancy').html(earthling.jupiterLifeExpectancy());
+    $('#earthLifeExpectancy').html(earthling.lifeExpectancy());
+    console.log(earthling.lifeExpectancy());
+    $('#mercuryLifeExpectancy').html(earthling.mercuryLifeExpectancy());
+    $('#venusLifeExpectancy').html(earthling.venusLifeExpectancy());
+    $('#marsLifeExpectancy').html(earthling.marsLifeExpectancy());
+    $('#jupiterLifeExpectancy').html(earthling.jupiterLifeExpectancy());
   });
 });

@@ -70,50 +70,50 @@ Life Expectancy Data source (2018): [https://www.cdc.gov/nchs/fastats/life-expec
 | **Program Displays User Data & Program Calculations**| User Input: "age + demographic data" | Output: "age + demographic data + planet ages & life expectancies" |
 
 ### Tests
-Describe: EarthlingData()
-Expect: EarthlingData (earthAge, T/F)
+Describe: earthlingData()
+Expect: earthlingData (earthAge, T/F)
 
-Describe: EarthAge()
-Expect: EarthAge(30).toEqual(30)
+Describe: earthAge()
+Expect: earthAge(30).toEqual(30)
 (Edge) cases to test for: NaN, "", >105 years old, <1 years old. 
 
-Describe: MercuryAge() 
-Test: MercuryAge(0.24 * EarthAge)
-Expect: MercuryAge(30).toEqual(7.2)
+Describe: mercuryAge() 
+Test: mercuryAge(0.24 * earthAge)
+Expect: mercuryAge(30).toEqual(7.2)
 
-Describe: VenusAge()
-Test: VenusAge(0.62 * EarthAge)
-Expect: VenusAge(30).toEqual(18.6)
+Describe: venusAge()
+Test: venusAge(0.62 * earthAge)
+Expect: venusAge(30).toEqual(18.6)
 
-Describe: MarsAge()
-Test: MarsAge(1.88 * EarthAge)
-Expect: MarsAge(30).toEqual(56.4)
+Describe: marsAge()
+Test: marsAge(1.88 * earthAge)
+Expect: marsAge(30).toEqual(56.4)
 
-Describe: JupiterAge()
-Test: JupiterAge(11.86 * EarthAge)
-Expect: JupiterAge(30).toEqual(355.8)
+Describe: jupiterAge()
+Test: jupiterAge(11.86 * earthAge)
+Expect: jupiterAge(30).toEqual(355.8)
 
-Describe: EarthLifeExpectancy()
-Test 1A: If smoker, (EarthLifeExpectancy- 8) && (xAge - U.S. average lifespan of 78.7)
-Expect: EarthAge(30, smoker).toEqual.EarthLifeExpectancy(40.7)
+Describe: earthLifeExpectancy()
+Test 1A: If smoker, (earthLifeExpectancy- 8) && (xAge - U.S. average lifespan of 78.7)
+Expect: earthAge(30, smoker).toEqual.earthLifeExpectancy(40.7)
 
-Describe: MercuryLifeExpectancy()
-Test: if MercuryAge > 2 minutes, then dead. 
-Test: MercuryAge - 0
-Expect: MercuryLifeExpectancy(MercuryAge = 7.2).toEqual(7.2y - 2m)
+Describe: mercuryLifeExpectancy()
+Test: if mercuryAge > 2 minutes, then dead. 
+Test: mercuryAge - 0
+Expect: mercuryLifeExpectancy(mercuryAge = 7.2).toEqual(7.2y - 2m)
 
-Describe: VenusLifeExpectancy()
-Test: if VenusAge > 1 second, then dead. 
-Test: VenusAge - 0
-Expect: MercuryLifeExpectancy(VenusAge = 18.6).toEqual(18.6y - 1s)
+Describe: venusLifeExpectancy()
+Test: if venusAge > 1 second, then dead. 
+Test: venusAge - 0
+Expect: mercuryLifeExpectancy(venusAge = 18.6).toEqual(18.6y - 1s)
 
-Describe: MarsLifeExpectancy()
-Test: if MarsAge > 2 minutes, then dead. 
-Expect: MarsLifeExpectancy(MarsAge = 56.4).toEqual(56.4y - 2m)
+Describe: marsLifeExpectancy()
+Test: if marsAge > 2 minutes, then dead. 
+Expect: marsLifeExpectancy(marsAge = 56.4).toEqual(56.4y - 2m)
 
-Describe: JupiterLifeExpectancy()
-Test: if JupiterAge > 0 seconds, then dead. 
-Expect: JupiterLifeExpectancy(JupiterAge = 355.8).toEqual(355.8)
+Describe: jupiterLifeExpectancy()
+Test: if jupiterAge > 0 seconds, then dead. 
+Expect: jupiterLifeExpectancy(jupiterAge = 355.8).toEqual(355.8)
 
 ### Stretch Goals
 

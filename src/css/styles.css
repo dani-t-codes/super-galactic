@@ -36,17 +36,17 @@ h2 {
   opacity: 80%;
 }
 
-#galactic-age-calculator {
+#galacticAgeCalculator {
   width: 300px;
 }
 
-#submit-button {
+#submitButton {
   background-color: #F2600C;
   opacity: 90%;
   letter-spacing: 3px;
 }
 
-#display-results {
+#displayResults {
   display: none;
   width: auto;
 }
@@ -61,6 +61,6 @@ h2 {
   padding-top: 20px;
 }
 
-#card-center, #earth-center{
+#cardCenter, #earthCenter{
   align-items: center;
 }
