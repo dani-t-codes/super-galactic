@@ -23,7 +23,6 @@ $(document).ready(function() {
     $('#showJupiterAge').html(earthling.jupiterAge());
     //life expectancy calculations
     $('#earthLifeExpectancy').html(earthling.lifeExpectancy());
-    console.log(earthling.lifeExpectancy());
     $('#mercuryLifeExpectancy').html(earthling.mercuryLifeExpectancy());
     $('#venusLifeExpectancy').html(earthling.venusLifeExpectancy());
     $('#marsLifeExpectancy').html(earthling.marsLifeExpectancy());

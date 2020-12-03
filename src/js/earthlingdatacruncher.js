@@ -24,17 +24,14 @@ export default class EarthlingData {
   //Planetary Life Expectancy Methods
   lifeExpectancy() {
     let earthLifeExpectancy = 78.7;
-    if ((earthLifeExpectancy > this.earthAge) && (this.smokerStatus === true)) {
-      return (earthLifeExpectancy - this.earthAge - 8 + " years left to live.");
-    } else if ((earthLifeExpectancy > this.earthAge) && (this.smokerStatus === false)) {
-      return (earthLifeExpectancy - this.earthAge + " years left to live.");
-    } else if ((earthLifeExpectancy < this.earthAge) && (this.smokerStatus === true)) {
-      return (this.earthAge - earthLifeExpectancy - 8 + " years past average US life expectancy.");
-    } else if ((earthLifeExpectancy < this.earthAge) && (this.smokerStatus === false)) {
-      return (this.earthAge - earthLifeExpectancy + " years past average US life expectancy.");
-    } else {
-      return ("Please enter a valid number.");
-    }
+    /* istanbul ignore else */
+    if (earthLifeExpectancy > this.earthAge) {
+      return (earthLifeExpectancy - this.earthAge) + " years left to live.";
+    } else if (earthLifeExpectancy < this.earthAge) {
+      return (this.earthAge - earthLifeExpectancy) + " years past average US life expectancy.";
+    } else if (earthLifeExpectancy === this.earthAge) {
+      return ("You have reached the average U.S. life expectancy.");
+    } 
   }
 
   mercuryLifeExpectancy() {
