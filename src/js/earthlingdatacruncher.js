@@ -37,7 +37,7 @@ export default class EarthlingData {
   }
 
   mercuryLifeExpectancy() {
-    return "<p>... not looking so great. In two minutes or less upon arrival to Mercury, the extreme heat or extreme cold - depending on which side of the planet you land on in relation to the sun - would be far too much for the human body to handle.</p> <p>You are " + (this.earthAge * 0.24) + " Mercury years past your Mercury life expectancy.</p>";
+    return "<p>... not looking so great. In two minutes or less upon arrival to Mercury, the extreme heat or extreme cold - depending on which side of the planet you land on in relation to the sun - would be far too much for the human body to handle.</p> <p>You are " +  (this.earthAge * 0.24) + " Mercury years past your Mercury life expectancy.</p>";
   }
 
   venusLifeExpectancy() {
