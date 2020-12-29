@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Test Driven Development & Environments with Javascript Practice for Epicodus, 11.13.20",
   "main": "main.js",
-  "homepage": "https://dani-t-codes.github.io/super-galactic/",
   "scripts": {
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
