@@ -103,7 +103,11 @@ Expect: jupiterAge(30).toEqual(355.8)
 
 Describe: earthLifeExpectancy()
 Test: 78.7 - earthAge
-Expect: earthAge(30).toEqual.earthLifeExpectancy(48.7)
+Expect: earthAge(30).toEqual(48.7)
+
+Describe: smokerLE()
+Test: if smokerStatus === 'true" { return earthLifeExpectancy - 8}
+Expect: earthAge(30, 'true').toEqual(40.7)
 
 Describe: mercuryLifeExpectancy()
 Test: if mercuryAge > 2 minutes, then dead. 
@@ -149,11 +153,9 @@ However, these and other potential factors will not be considered for the purpos
 
 It might be possible to continue doing some refactoring work on the earthling data page with an ES6 class extend, to refactor the business logic into smaller chunks. In terms of cleaning up what the user sees, the ages and life expectancies returned could also get limited to X number of decimal points. 
 
-Additionally, there are some exceptions that could add functionality to the project, including if a user enters a value that is not a number or doesn't answer all questions. 
-
 ## Known bugs
 
-As of 12.2.2020, there is one bug that I am aware of where the earth life expectancy formula will print "78.7 years left to live" if nothing is entered in the Earth age input. 
+No known bugs at this time. 
 
 ### Legal, or License 
 
