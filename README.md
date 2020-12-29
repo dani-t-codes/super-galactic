@@ -12,7 +12,10 @@ The life expectancy calculation is quite simple, and is just based on the United
 ### References
 Life Expectancy Data source (2018): [https://www.cdc.gov/nchs/fastats/life-expectancy.htm].
 
-(For reference, please visit [Seeker](https://www.seeker.com/videos/space-innovation/how-long-could-you-survive-on-other-planets]).
+(For reference, please visit [Seeker](https://www.seeker.com/videos/space-innovation/how-long-could-you-survive-on-other-planets).
+
+### Splash Page Preview
+![Splash Page of solar system with user form inputs.](assets/images/Splash-Page-Screenshot.png)
 
 ### Color theme
 * _#2E3C8C (Med-dark blue)_
