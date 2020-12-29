@@ -26,6 +26,16 @@ describe('EarthlingData', () => {
     const earthling4 = new EarthlingData(40);
     expect(earthling4.jupiterAge()).toEqual(474.4);
   });
+
+  // test('should correctly reduce earthLifeExpectancy based on smokerStatus', () => {
+  //   const earthling = new EarthlingData(40, true);
+  //   expect(earthling.smokerLE()).toEqual(70.7);
+  // });
+  // test('should correctly reduce earthLifeExpectancy based on smokerStatus', () => {
+  //   const earthling = new EarthlingData(40, false);
+  //   expect(earthling.smokerLE()).toEqual(78.7);
+  // });
+
   
   test('should calculate U.S. life expectancy based on EarthAge', () => {
     const earthling = new EarthlingData(40, false);
