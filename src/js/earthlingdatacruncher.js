@@ -22,13 +22,13 @@ export default class EarthlingData {
     return this.earthAge * 11.86;
   }
 
-  smokerLE() {
-    if (this.smokerStatus === true) {
-      this.earthLifeExpectancy -= 8;
-    } else if (this.smokerStatus === false) {
-      this.earthLifeExpectancy += 0;
-    }
-  }
+  // smokerLE() {
+  //   if (this.smokerStatus === true) {
+  //     this.earthLifeExpectancy -= 8;
+  //   } else if (this.smokerStatus === false) {
+  //     this.earthLifeExpectancy += 0;
+  //   }
+  // }
 
   //Planetary Life Expectancy Methods
   lifeExpectancy() {
