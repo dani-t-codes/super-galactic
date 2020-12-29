@@ -1,4 +1,4 @@
-# Application name "Super Galactic Age Calculator"
+# Super Galactic Age Calculator
 
 #### Test Driven Development & Environments with Javascript, Practice for Epicodus, 11.13.20
 
@@ -12,7 +12,7 @@ The life expectancy calculation is quite simple, and is just based on the United
 ### References
 Life Expectancy Data source (2018): [https://www.cdc.gov/nchs/fastats/life-expectancy.htm].
 
-(For reference, please visit (Seeker)[https://www.seeker.com/videos/space-innovation/how-long-could-you-survive-on-other-planets]).
+(For reference, please visit [Seeker](https://www.seeker.com/videos/space-innovation/how-long-could-you-survive-on-other-planets]).
 
 ### Color theme
 * _#2E3C8C (Med-dark blue)_
@@ -34,7 +34,7 @@ Life Expectancy Data source (2018): [https://www.cdc.gov/nchs/fastats/life-expec
 
 ## Installation Requirements
 ###### For Mac Users
-* _Access Terminal in your Finder, and open a new window. Install the package manager, (Homebrew) [https://brew.sh/], on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`._
+* _Access Terminal in your Finder, and open a new window. Install the package manager, [Homebrew](https://brew.sh/), on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`._
 * _Ensure Homebrew packages are run with this line of code: `echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile`._
 * _Once homebrew is installed, install Git, a version control system for code writers, with this line of code `brew install git`._
 * _Now, install Node.js through Homebrew with the following command: `brew install node`._
@@ -42,16 +42,16 @@ Life Expectancy Data source (2018): [https://www.cdc.gov/nchs/fastats/life-expec
 
 ###### For Windows Users
 * _Open a new Command Prompt window by typing "Cmd" in your computer's search bar._
-* _Determine whether you have 32-bit or 64-bit Windows by following these (instructions)[https://support.microsoft.com/en-us/help/13443/windows-which-version-am-i-running]._
-* _Go to (Git Bash)[https://gitforwindows.org/], click on the "Download" button, and download the corresponding exe file from the Git for Windows site._
+* _Determine whether you have 32-bit or 64-bit Windows by following these [instructions](https://support.microsoft.com/en-us/help/13443/windows-which-version-am-i-running)._
+* _Go to [Git Bash](https://gitforwindows.org/), click on the "Download" button, and download the corresponding exe file from the Git for Windows site._
 * _Follow the instructions in the set up menu._
-* _Once you have Git installed on your computer, go to this (GitHub repository)[https://github.com/dani-t-codes/super-galactic], click the "Fork" button in the upper right hand corner of the page, and clone this application with the following command:`git clone https://github.com/dani-t-codes/super-galactic`._
-* _Go to the (Node.js website)[https://nodejs.org/en/download/] and download the appropriate source code for your Windows operating system._ 
+* _Once you have Git installed on your computer, go to this [GitHub repository](https://github.com/dani-t-codes/super-galactic), click the "Fork" button in the upper right hand corner of the page, and clone this application with the following command:`git clone https://github.com/dani-t-codes/super-galactic`._
+* _Go to the [Node.js website](https://nodejs.org/en/download/) and download the appropriate source code for your Windows operating system._ 
 
 ###### For Both Mac & Windows systems
 * _Once the project has been cloned to your computer and you have all the necessary items on your local computer, open the project in the application of your choice, and run `npm install` to get the appropriate dependencies from Node.js in the project._
 * _From there, you can run `npm run test` to run the package's test script(s)._
-* _If you run `npm run start`, you will be able to open a live session of the application from your preferred code editor. ((Visual Code Studio)[https://code.visualstudio.com/] was used and is recommended by the application builder.)_
+* _If you run `npm run start`, you will be able to open a live session of the application from your preferred code editor. ([Visual Code Studio](https://code.visualstudio.com/) was used and is recommended by the application builder.)_
 
 ### Specs
 | Spec | Input | Output |
