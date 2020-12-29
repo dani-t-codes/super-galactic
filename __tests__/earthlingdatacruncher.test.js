@@ -26,28 +26,35 @@ describe('EarthlingData', () => {
     const earthling4 = new EarthlingData(40);
     expect(earthling4.jupiterAge()).toEqual(474.4);
   });
-
-  // test('should correctly reduce earthLifeExpectancy based on smokerStatus', () => {
-  //   const earthling = new EarthlingData(40, true);
-  //   expect(earthling.smokerLE()).toEqual(70.7);
-  // });
-  // test('should correctly reduce earthLifeExpectancy based on smokerStatus', () => {
-  //   const earthling = new EarthlingData(40, false);
-  //   expect(earthling.smokerLE()).toEqual(78.7);
-  // });
-
   
+  test('should calculate U.S. life expectancy based on EarthAge', () => {
+    const earthling4 = new EarthlingData(78, false);
+    expect(earthling4.lifeExpectancy()).toEqual("You have reached the average U.S. life expectancy.");
+  });
+  test('should calculate U.S. life expectancy based on EarthAge', () => {
+    const earthling4 = new EarthlingData(79, false);
+    expect(earthling4.lifeExpectancy()).toEqual("You have reached the average U.S. life expectancy.");
+  });
+  test('should calculate U.S. life expectancy based on EarthAge', () => {
+    const earthling4 = new EarthlingData(90, false);
+    expect(earthling4.lifeExpectancy()).toEqual("11.299999999999997 years past average U.S. life expectancy.");
+  });
   test('should calculate U.S. life expectancy based on EarthAge', () => {
     const earthling = new EarthlingData(40, false);
     expect(earthling.lifeExpectancy()).toEqual("38.7 years left to live.");
   });
   test('should calculate U.S. life expectancy based on EarthAge', () => {
-    const earthling4 = new EarthlingData(90, false);
-    expect(earthling4.lifeExpectancy()).toEqual("11.299999999999997 years past average US life expectancy.");
+    const earthling4 = new EarthlingData(NaN, "test");
+    expect(earthling4.lifeExpectancy()).toEqual("Uh-oh, something went wrong.");
   });
-  test('should calculate U.S. life expectancy based on EarthAge', () => {
-    const earthling4 = new EarthlingData(78.7, false);
-    expect(earthling4.lifeExpectancy()).toEqual("You have reached the average U.S. life expectancy.");
+
+  test('should correctly reduce earthLifeExpectancy based on smokerStatus', () => {
+    const earthling = new EarthlingData(40, 'true');
+    expect(earthling.smokerLE()).toEqual(70.7);
+  });
+  test('should correctly reduce earthLifeExpectancy based on smokerStatus', () => {
+    const earthling = new EarthlingData(40, 'false');
+    expect(earthling.smokerLE()).toEqual(78.7);
   });
 
   test('should calculate Mercury life expectancy based on MercuryAge', () => {

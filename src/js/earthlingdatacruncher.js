@@ -1,7 +1,7 @@
 export default class EarthlingData {
-  constructor(earthAge, Boolean) {
+  constructor(earthAge, smokerStatus) {
     this.earthAge = earthAge;
-    this.smokerStatus = Boolean;
+    this.smokerStatus = smokerStatus;
     this.earthLifeExpectancy = 78.7;
   }
 
@@ -22,24 +22,25 @@ export default class EarthlingData {
     return this.earthAge * 11.86;
   }
 
-  // smokerLE() {
-  //   if (this.smokerStatus === true) {
-  //     this.earthLifeExpectancy -= 8;
-  //   } else if (this.smokerStatus === false) {
-  //     this.earthLifeExpectancy += 0;
-  //   }
-  // }
-
   //Planetary Life Expectancy Methods
   lifeExpectancy() {
-    /* istanbul ignore else */
-    if (this.earthLifeExpectancy > this.earthAge) {
-      return (this.earthLifeExpectancy - this.earthAge) + " years left to live.";
-    } else if (this.earthLifeExpectancy < this.earthAge) {
-      return (this.earthAge - this.earthLifeExpectancy) + " years past average US life expectancy.";
-    } else if (this.earthLifeExpectancy === this.earthAge) {
+    if (this.earthAge === 78 || this.earthAge === 79) {
       return ("You have reached the average U.S. life expectancy.");
-    } 
+    } else if (this.earthLifeExpectancy < this.earthAge) {
+      return (this.earthAge - this.earthLifeExpectancy) + " years past average U.S. life expectancy.";
+    } else if (this.earthLifeExpectancy > this.earthAge) {
+      return (this.earthLifeExpectancy - this.earthAge) + " years left to live.";
+    } else {
+      return ("Uh-oh, something went wrong.");
+    }
+  }
+  
+  smokerLE() {
+    if (this.smokerStatus === 'true') {
+      this.earthLifeExpectancy -= 8;
+    } else {
+      this.earthLifeExpectancy;
+    }
   }
 
   mercuryLifeExpectancy() {
