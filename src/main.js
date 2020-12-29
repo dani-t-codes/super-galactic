@@ -11,6 +11,7 @@ $(document).ready(function() {
     const earthAge = $('#earthAge').val();
     const smokerStatus = $('#smokerStatus').val();
     const earthling = new EarthlingData(earthAge, smokerStatus);
+    earthling.smokerLE();
     //clear forms, show hidden section
     $('#displayResults').show();
     $('input#earthAge').val("");
