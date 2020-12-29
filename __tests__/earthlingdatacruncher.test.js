@@ -51,12 +51,12 @@ describe('EarthlingData', () => {
   test('should correctly reduce earthLifeExpectancy based on smokerStatus', () => {
     const earthling = new EarthlingData(40, 'true');
     earthling.smokerLE();
-    expect(earthling.lifeExpectancy()).toEqual(70.7);
+    expect(earthling.lifeExpectancy()).toEqual("30.700000000000003 years left to live.");
   });
   test('should correctly reduce earthLifeExpectancy based on smokerStatus', () => {
     const earthling = new EarthlingData(40, 'false');
     earthling.smokerLE();
-    expect(earthling.lifeExpectancy()).toEqual(78.7);
+    expect(earthling.lifeExpectancy()).toEqual("38.7 years left to live.");
   });
 
   test('should calculate Mercury life expectancy based on MercuryAge', () => {
