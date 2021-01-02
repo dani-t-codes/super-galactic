@@ -40,8 +40,6 @@ Life Expectancy Data source (2018): [https://www.cdc.gov/nchs/fastats/life-expec
 ## Installation Requirements
 This application requires the above technologies. If your local system does not include any of the listed technologies, please follow the instructions below to clone the project from GitHub to your local machine, as well as to set up your local machine to be able to view the cloned project. 
 
-Alternatively, the live project can be accessed at https://dani-t-codes.github.io/super-galactic.
-
 ###### For Mac Users
 * _Access Terminal in your Finder, and open a new window. Install the package manager, [Homebrew](https://brew.sh/), on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`._
 * _Ensure Homebrew packages are run with this line of code: `echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile`._
